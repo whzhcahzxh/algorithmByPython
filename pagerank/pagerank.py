@@ -62,10 +62,11 @@ class pageRank():
 if __name__=='__main__':
 #     test = pageRank(pageNumber=7115)
     test = pageRank(pageNumber=20)
-    with open('Wiki-Vote.txt','r') as fp:
-        lines = fp.readlines()
+#     with open('Wiki-Vote.txt','r') as fp:
+#         lines = fp.readlines()
 #     for line in lines:
 #         temp = line.strip().split('\t')
 #         test.addEdge(eval(temp[0]), eval(temp[1]))
     test.addEdge(1,5)
+    test.addEdge(5,1)
     print test.cal()
